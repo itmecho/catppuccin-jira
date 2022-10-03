@@ -1,0 +1,116 @@
+@-moz-document domain("<your-domain>.atlassian.net") {
+:root {
+  /* Catppuccin Macchiato */
+  --c-rosewater: #f4dbd6;
+  --c-flamingo: #f0c6c6;
+  --c-pink: #f5bde6;
+  --c-mauve: #c6a0f6;
+  --c-red: #ed8796;
+  --c-maroon: #ee99a0;
+  --c-peach: #f5a97f;
+  --c-yellow: #eed49f;
+  --c-green: #a6da95;
+  --c-teal: #8bd5ca;
+  --c-sky: #91d7e3;
+  --c-sapphire: #7dc4e4;
+  --c-blue: #8aadf4;
+  --c-lavender: #b7bdf8;
+  --c-text: #cad3f5;
+  --c-subtext1: #b8c0e0;
+  --c-subtext0: #a5adcb;
+  --c-overlay2: #939ab7;
+  --c-overlay1: #8087a2;
+  --c-overlay0: #6e738d;
+  --c-surface2: #5b6078;
+  --c-surface1: #494d64;
+  --c-surface0: #363a4f;
+  --c-base: #24273a;
+  --c-mantle: #1e2030;
+  --c-crust: #181926;
+
+  /* JIRA surfaces */
+  --ds-surface-overlay: var(--c-surface1);
+  --ds-surface-raised: var(--c-surface1);
+  --ds-surface-sunken: var(--c-surface0);
+  --ds-surface: var(--c-base);
+
+/* JIRA Backgrounds */
+  --ds-background-boldBrand-resting: var(--c-blue);
+  --ds-background-boldDanger-resting: var(--c-red);
+  --ds-background-brand-bold-hovered: var(--c-sapphire);
+  --ds-background-brand-bold: var(--c-blue);
+  --ds-background-danger-hovered: var(--c-surface2);
+  --ds-background-danger: var(--c-surface0);
+  --ds-background-information-bold: var(--c-green);
+  --ds-background-information-hovered: var(--c-pink);
+  --ds-background-information: var(--c-rosewater);
+  --ds-background-input-hovered: var(--c-overlay1);
+  --ds-background-input: var(--c-overlay0);
+  --ds-background-neutral-hovered: var(--c-mantle);
+  --ds-background-neutral-subtle-hovered: var(--c-surface2);
+  --ds-background-neutral-subtle: var(--c-overlay0);
+  --ds-background-neutral: var(--c-base);
+  --ds-background-selected-hovered: var(--c-surface2);
+  --ds-background-selected: var(--c-overlay0);
+  --ds-background-subtleNeutral-resting: var(--c-overlay1);
+  --ds-background-success-bold: var(--c-green);
+
+  /* JIRA Borders */
+  --ds-border-brand: var(--c-blue);
+  --ds-border-input: var(--c-green);
+  --ds-border: var(--c-base);
+
+  /* JIRA Text */
+  --ds-text-highEmphasis: var(--c-text);
+  --ds-text-information: var(--c-base);
+  --ds-text-inverse: var(--c-surface1);
+  --ds-text-link-resting: var(--c-teal);
+  --ds-text-onBold: var(--c-surface0);
+  --ds-text-subtle: var(--c-subtext0);
+  --ds-text-subtlest: var(--c-subtext0);
+  --ds-text: var(--c-text);
+
+  /* JIRA Links */
+  --ds-link: var(--c-green);
+}
+
+a:visited {
+  color: var(--c-text) !important;
+}
+
+div[role='dialog'] {
+  background-color: var(--c-surface0);
+}
+div[role='dialog'] p,
+div[role='dialog'] li {
+  color: var(--c-text);
+}
+div[role='dialog'] button {
+  background-color: var(--c-green);
+  color: var(--c-base) !important;
+}
+
+#ak-jira-navigation button {
+  background-color: var(--c-blue);
+  color: var(--c-base);
+}
+
+#ak-jira-navigation > header {
+  background-color: var(--c-mantle);
+}
+#ak-jira-navigation #createGlobalItem {
+  background-color: var(--c-green);
+}
+#ak-jira-navigation button svg {
+  color: var(--c-mantle);
+  --icon-secondary-color: var(--c-blue);
+}
+#ak-jira-navigation input[placeholder='Search'] {
+  background-color: var(--c-surface1);
+}
+
+#ak-side-navigation {
+  --ds-surface: var(--c-surface0);
+}
+
+}
